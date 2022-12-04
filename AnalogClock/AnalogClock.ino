@@ -26,7 +26,7 @@ DS1307ESPTime rtc;
 //uint8_t listrgbpins[6] = {25, 26, 27, 12, 13, 14};
 //GPxMatrix matrix(P_A, P_B, P_C, P_D, P_E, P_CLK, P_LAT, P_OE, true, 64, listrgbpins);
 
-RGBmatrixPanelGP matrix(P_A, P_B, P_C, P_D, P_E, P_CLK, P_LAT, P_OE, true, 64);
+GPxMatrix matrix(P_A, P_B, P_C, P_D, P_E, P_CLK, P_LAT, P_OE, true, 64);
 
 #define clear()          matrix.fillScreen(0)
 #define show()           matrix.swapBuffers(false)
