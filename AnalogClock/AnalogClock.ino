@@ -9,7 +9,7 @@
 */
 #include <GPxMatrix.h>
 #include <DS1307ESPTime.h>
-#include <font/fontclock.h>
+#include <fontclock.h>
 
 DS1307ESPTime rtc;
 
