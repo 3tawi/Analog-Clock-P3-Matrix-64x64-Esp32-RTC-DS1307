@@ -61,7 +61,7 @@ void redtime() {
 }    
 void drawclockNB() {
   float radians, angle;
-  int j = 0;
+  int j = 48;
   matrix.setFont(&fontclock);
   for (int i = 0; i < 60; i+=5) {
     matrix.setTextColor(MyColor[(co1+i*5)%92]);
@@ -70,9 +70,7 @@ void drawclockNB() {
     int x0 = CENTRE_X + 26 * sin(radians);
     int y0 = CENTRE_Y + 26 * cos(radians);
     matrix.setCursor(x0,y0);
-    matrix.print(char(j));
-    j++;
-    if (j == 10) { j = 11;}
+    matrix.print(char(j++));
   }
   matrix.setFont();
 }
